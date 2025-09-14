@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gram-Urja: AI-Powered Microgrid System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #263238;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #1976D2, #42A5F5);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .section-bg {
+            background-color: #e9ecef;
+        }
+        .card-bg {
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-sm bg-white/80 border-b border-gray-200">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center text-gray-800">
+            <a href="#hero" class="text-2xl font-bold">
+                <span class="gradient-text">Gram-Urja</span>
+            </a>
+            <div class="hidden lg:flex space-x-6 text-sm font-medium">
+                <a href="#problem" class="hover:text-blue-600 transition-colors">Problem</a>
+                <a href="#solution" class="hover:text-blue-600 transition-colors">Solution</a>
+                <a href="#business-model" class="hover:text-blue-600 transition-colors">Business Model</a>
+                <a href="#market" class="hover:text-blue-600 transition-colors">Market</a>
+                <a href="#implementation" class="hover:text-blue-600 transition-colors">Implementation</a>
+                <a href="#partnerships" class="hover:text-blue-600 transition-colors">Partnerships</a>
+                <a href="#impact" class="hover:text-blue-600 transition-colors">Impact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-button" class="lg:hidden text-2xl focus:outline-none text-gray-800">
+                &#9776;
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/90 px-4 py-2 text-center text-gray-800">
+            <a href="#problem" class="block py-2 hover:text-blue-600 transition-colors">Problem</a>
+            <a href="#solution" class="block py-2 hover:text-blue-600 transition-colors">Solution</a>
+            <a href="#business-model" class="block py-2 hover:text-blue-600 transition-colors">Business Model</a>
+            <a href="#market" class="block py-2 hover:text-blue-600 transition-colors">Market</a>
+            <a href="#implementation" class="block py-2 hover:text-blue-600 transition-colors">Implementation</a>
+            <a href="#partnerships" class="block py-2 hover:text-blue-600 transition-colors">Partnerships</a>
+            <a href="#impact" class="block py-2 hover:text-blue-600 transition-colors">Impact</a>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center justify-center text-center px-4 py-24 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <p class="text-lg md:text-xl text-blue-600 font-semibold mb-3">AI-POWERED MICROGRID MANAGEMENT</p>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-6 text-gray-900">
+                    <span class="gradient-text">Gram-Urja:</span> Transforming Rural Odisha with Resilient Energy
+                </h1>
+                <p class="text-md md:text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Gram-Urja is a comprehensive AI-powered microgrid management platform specifically engineered for rural Odisha's unique challenges of cyclones, floods, and irregular power supply. The system transforms energy-vulnerable villages into disaster-resilient, self-managing microgrids through real-time IoT monitoring, predictive analytics, and community-centric mobile applications.
+                </p>
+                <!-- Key Value Propositions -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left my-10">
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md transition-all hover:shadow-lg">
+                        <h3 class="text-3xl font-bold text-blue-800">95%<span class="text-lg text-gray-800">+</span></h3>
+                        <p class="text-sm text-gray-600">Uptime during normal conditions with 72+ hours of autonomous backup during disasters.</p>
+                    </div>
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md transition-all hover:shadow-lg">
+                        <h3 class="text-3xl font-bold text-blue-800">30%</h3>
+                        <p class="text-sm text-gray-600">Cost reduction through intelligent AI optimization and predictive maintenance.</p>
+                    </div>
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md transition-all hover:shadow-lg">
+                        <h3 class="text-3xl font-bold text-blue-800">100%</h3>
+                        <p class="text-sm text-gray-600">Transparency through blockchain-based energy trading and billing.</p>
+                    </div>
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md transition-all hover:shadow-lg">
+                        <h3 class="text-3xl font-bold text-blue-800">₹2,400<span class="text-lg text-gray-800">cr+</span></h3>
+                        <p class="text-sm text-gray-600">Addressable market in Odisha with strong government support and funding.</p>
+                    </div>
+                </div>
+                <a href="#problem" class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-md mt-6">
+                    Explore the Solution
+                </a>
+            </div>
+        </section>
+
+        <!-- Problem Statement -->
+        <section id="problem" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">The Rural Odisha Energy Crisis</h2>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Text Content -->
+                    <div class="space-y-8">
+                        <p class="text-lg text-gray-600">
+                            Rural Odisha faces a perfect storm of energy challenges that traditional grid infrastructure cannot adequately address.
+                        </p>
+                        <!-- Infrastructure Vulnerability -->
+                        <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                            <h3 class="text-2xl font-semibold mb-2 text-blue-700">Infrastructure Vulnerability</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                <li><strong>47%</strong> of villages experience 8+ hours of daily power outages.</li>
+                                <li>Cyclone Fani (2019) left 4.2 million people without power for 10+ days.</li>
+                                <li>Annual infrastructure damage costs exceed <strong>₹2,800 crore</strong>.</li>
+                                <li>Grid restoration after disasters takes 7-14 days in remote areas.</li>
+                            </ul>
+                        </div>
+                        <!-- Economic Burden -->
+                        <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                            <h3 class="text-2xl font-semibold mb-2 text-blue-700">Economic Burden</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                <li>Rural communities pay <strong>₹8-12/kWh</strong> for diesel generators vs ₹4/kWh grid tariff.</li>
+                                <li><strong>60%</strong> of rural businesses close during extended outages.</li>
+                                <li>Agricultural productivity drops <strong>40%</strong> due to unreliable power for irrigation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Infographics and Imagery -->
+                    <div class="flex flex-col space-y-8 mt-8 lg:mt-0">
+                        <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                            <h3 class="text-2xl font-semibold mb-2 text-blue-700">Social Impact</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                <li>Healthcare facilities unable to maintain cold chain for vaccines.</li>
+                                <li>Students missing evening study hours due to power cuts.</li>
+                                <li>Women's safety compromised due to non-functional street lighting.</li>
+                            </ul>
+                        </div>
+                        <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                            <h3 class="text-2xl font-semibold mb-2 text-blue-700">Climate Challenges</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                <li>Odisha faces <strong>2-3 major cyclones</strong> annually.</li>
+                                <li>Sea-level rise threatens coastal infrastructure.</li>
+                                <li>Extreme weather events increasing in frequency and intensity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Overview -->
+        <section id="solution" class="section-bg py-20">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Gram-Urja: Integrated Smart Microgrid Platform</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Real-Time Monitoring -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md transition-all hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">1. Real-Time Energy Monitoring</h3>
+                        <p class="text-gray-600 text-sm">Comprehensive sensor network tracks solar, wind, battery, and grid power. ESP32 microcontrollers with PZEM-004T sensors provide granular visibility. MQTT protocol ensures reliable data transmission even on 2G networks.</p>
+                    </div>
+                    <!-- AI-Powered Switching -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md transition-all hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">2. AI-Powered Source Switching</h3>
+                        <p class="text-gray-600 text-sm">Machine learning models predict optimal energy source every 30 seconds. Random Forest algorithms consider weather, battery health, and load patterns. Automatic relay control maximizes efficiency and extends battery life.</p>
+                    </div>
+                    <!-- Predictive Maintenance -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md transition-all hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">3. Predictive Maintenance</h3>
+                        <p class="text-gray-600 text-sm">Advanced algorithms predict equipment failures before they occur. Battery State-of-Health monitoring prevents costly premature replacements. FFT analysis of vibration data identifies mechanical issues early.</p>
+                    </div>
+                    <!-- Mobile App -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md transition-all hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">4. Community-Centric Mobile App</h3>
+                        <p class="text-gray-600 text-sm">Multilingual interface (Odia/Hindi) for local operators. Gamified energy challenges encourage community participation. Real-time dashboards show system status and individual consumption.</p>
+                    </div>
+                    <!-- Digital Twin -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md transition-all hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">5. Digital Twin Simulation</h3>
+                        <p class="text-gray-600 text-sm">Virtual replica enables "what-if" scenario testing. Disaster preparation simulations optimize response strategies. Training environment for village operators.</p>
+                    </div>
+                    <!-- Weather Integration -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md transition-all hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">6. Advanced Weather Integration</h3>
+                        <p class="text-gray-600 text-sm">48-hour advance cyclone preparation protocols. Automatic transition to emergency operation modes. Integration with IMD weather data and local sensors.</p>
+                    </div>
+                    <!-- Smart Load Management -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md transition-all hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">7. Smart Load Management</h3>
+                        <p class="text-gray-600 text-sm">Priority-based load shedding during supply shortfalls. Quota-based energy allocation with automated violation tracking. Fair and transparent enforcement through blockchain records.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Model -->
+        <section id="business-model" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Business Model Framework</h2>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div class="space-y-12">
+                        <!-- Customer Segments -->
+                        <div>
+                            <h3 class="text-3xl font-bold mb-4 text-blue-700">Customer Segments</h3>
+                            <div class="space-y-4">
+                                <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                    <p class="text-xl font-semibold mb-1">Primary Customers</p>
+                                    <p class="text-gray-600 text-sm">Odisha Renewable Energy Development Agency (OREDA), Rural Development Dept., Village Panchayats & Gram Sabhas.</p>
+                                </div>
+                                <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                    <p class="text-xl font-semibold mb-1">End Users</p>
+                                    <p class="text-gray-600 text-sm">30,000+ rural villages, individual households, small businesses, and community institutions.</p>
+                                </div>
+                                <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                    <p class="text-xl font-semibold mb-1">Strategic Partners</p>
+                                    <p class="text-gray-600 text-sm">CSR organizations, impact investors, int'l development agencies, and microfinance institutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Revenue Streams -->
+                        <div>
+                            <h3 class="text-3xl font-bold mb-4 text-blue-700">Revenue Streams</h3>
+                            <div class="space-y-4">
+                                <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                    <p class="text-xl font-semibold mb-1">Government Subscription Service</p>
+                                    <p class="text-gray-600 text-sm">Platform monitoring and management fees (₹15/kW-month).</p>
+                                </div>
+                                <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                    <p class="text-xl font-semibold mb-1">Village Contribution</p>
+                                    <p class="text-gray-600 text-sm">System maintenance fees (₹10/kW-month).</p>
+                                </div>
+                                <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                    <p class="text-xl font-semibold mb-1">Hardware Sales</p>
+                                    <p class="text-gray-600 text-sm">₹8L per 25kW village system, including installation and commissioning.</p>
+                                </div>
+                                <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                    <p class="text-xl font-semibold mb-1">Carbon Credits</p>
+                                    <p class="text-gray-600 text-sm">₹2L/year per village from verified emission reductions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Value Propositions -->
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4 text-blue-700">Value Propositions</h3>
+                        <div class="space-y-6">
+                            <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                <h4 class="text-2xl font-semibold mb-2">For Government</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                                    <li>Disaster resilience and energy security.</li>
+                                    <li>Economic development & rural empowerment.</li>
+                                    <li>Significant CO₂ reduction & climate action.</li>
+                                </ul>
+                            </div>
+                            <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                <h4 class="text-2xl font-semibold mb-2">For Villages</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                                    <li>95% uptime & 30% cost savings.</li>
+                                    <li>Income generation via P2P trading.</li>
+                                    <li>Transparency & 72+ hours of autonomous operation.</li>
+                                </ul>
+                            </div>
+                            <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                <h4 class="text-2xl font-semibold mb-2">For Partners</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                                    <li>Measurable impact & scalable model.</li>
+                                    <li>Technology leadership & carbon credits for ESG goals.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Projections -->
+        <section id="financials" class="section-bg py-20">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Financial Projections</h2>
+                <!-- Unit Economics -->
+                <div class="card-bg p-8 rounded-xl border border-gray-200 shadow-md mb-12">
+                    <h3 class="text-3xl font-bold mb-4 text-center text-blue-700">Per Village Unit Economics (25kW System)</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2">Investment Structure</h4>
+                            <div class="space-y-2 text-gray-600">
+                                <p><strong>Total Cost:</strong> ₹8,00,000</p>
+                                <p><strong>Govt. Grant (60%):</strong> ₹4,80,000</p>
+                                <p><strong>Village Contribution (20%):</strong> ₹1,60,000</p>
+                                <p><strong>SHG Micro-loan (20%):</strong> ₹1,60,000</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2">Monthly Revenue</h4>
+                            <div class="space-y-2 text-gray-600">
+                                <p><strong>Subscription:</strong> ₹12,000</p>
+                                <p><strong>Carbon Credits:</strong> ₹4,000</p>
+                                <p><strong>P2P Trading Fees:</strong> ₹2,000</p>
+                                <p><strong>Total:</strong> ₹18,000</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-2">Financial Outcome</h4>
+                            <div class="space-y-2 text-gray-600">
+                                <p><strong>Monthly Surplus:</strong> ₹10,000</p>
+                                <p><strong>Annual Surplus:</strong> ₹1,20,000</p>
+                                <p><strong>Payback Period:</strong> 18 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Scalability Projections -->
+                <div class="card-bg p-8 rounded-xl border border-gray-200 shadow-md">
+                    <h3 class="text-3xl font-bold mb-4 text-center text-blue-700">Scalability Projections</h3>
+                    <div class="flex flex-col md:flex-row justify-between items-center text-center space-y-8 md:space-y-0 md:space-x-8">
+                        <div class="w-full md:w-1/3 p-4 bg-gray-100 rounded-lg border border-gray-200">
+                            <p class="text-2xl font-bold text-blue-800">Phase 1</p>
+                            <p class="text-sm text-gray-600">Timeline: 2026. Objectives: Validate technology, demonstrate community adoption, build government confidence. Targets: 50 villages in Ganjam, Puri, and Balasore. Metrics: 95% uptime, 72+ hours backup, 30% cost reduction.</p>
+                        </div>
+                        <div class="w-full md:w-1/3 p-4 bg-gray-100 rounded-lg border border-gray-200">
+                            <p class="text-2xl font-bold text-blue-800">Phase 2</p>
+                            <p class="text-sm text-gray-600">Timeline: 2027-2029. Strategy: District-wise rollout, partnership with local system integrators, automated deployment. Funding: OREDA anchor customer, CSR partnerships, international funding. Goal: Deploy to 2,000 villages.</p>
+                        </div>
+                        <div class="w-full md:w-1/3 p-4 bg-gray-100 rounded-lg border border-gray-200">
+                            <p class="text-2xl font-bold text-blue-800">Phase 3</p>
+                            <p class="text-sm text-gray-600">Timeline: 2030+. Model: Franchise partnerships, technology licensing, white-label solutions for state utilities. Vision: Replicate the model across India's 600,000+ villages and enter the international market.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Analysis -->
+        <section id="market" class="py-20">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Market Analysis</h2>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Market Size -->
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-bold text-blue-700">Market Size and Opportunity</h3>
+                        <ul class="space-y-4 text-gray-600">
+                            <li><strong>Immediate Addressable Market:</strong> 30,000+ villages in Odisha with strong government and private funding available.</li>
+                            <li><strong>Serviceable Addressable Market:</strong> 5,000 priority villages, with an initial target of 2,000 villages by 2029, generating ₹432 crore in annual revenue.</li>
+                            <li><strong>Total Addressable Market:</strong> 600,000+ rural villages in India, with a global off-grid market of $15 billion annually.</li>
+                        </ul>
+                    </div>
+                    <!-- Competitive Landscape -->
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-bold text-blue-700">Competitive Landscape</h3>
+                        <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                            <h4 class="text-xl font-semibold mb-2">Direct & Indirect Competitors</h4>
+                            <p class="text-sm text-gray-600"><strong>Direct:</strong> OMC Power, BSES Rajdhani, Husk Power. <strong>Indirect:</strong> Solar home systems, diesel generators, traditional grid extension.</p>
+                        </div>
+                        <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                            <h4 class="text-xl font-semibold mb-2">Competitive Advantages</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                                <li>The only solution designed specifically for cyclone-prone regions.</li>
+                                <li>Community-centric approach for sustainability.</li>
+                                <li>AI optimization for measurable efficiency gains.</li>
+                                <li>Government partnership for policy support and funding.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Implementation Strategy -->
+        <section id="implementation" class="section-bg py-20">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Implementation Strategy</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Phase 1 -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-700">Phase 1: Pilot Deployment</h3>
+                        <p class="text-gray-600 text-sm">Timeline: 2026. Objectives: Validate technology, demonstrate community adoption, build government confidence. Targets: 50 villages in Ganjam, Puri, and Balasore. Metrics: 95% uptime, 72+ hours backup, 30% cost reduction.</p>
+                    </div>
+                    <!-- Phase 2 -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-700">Phase 2: State-wide Scale</h3>
+                        <p class="text-gray-600 text-sm">Timeline: 2027-2029. Strategy: District-wise rollout, partnership with local system integrators, automated deployment. Funding: OREDA anchor customer, CSR partnerships, international funding. Goal: Deploy to 2,000 villages.</p>
+                    </div>
+                    <!-- Phase 3 -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-700">Phase 3: Pan-India Expansion</h3>
+                        <p class="text-gray-600 text-sm">Timeline: 2030+. Model: Franchise partnerships, technology licensing, white-label solutions for state utilities. Vision: Replicate the model across India's 600,000+ villages and enter the international market.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnerships -->
+        <section id="partnerships" class="py-20">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Partnership Ecosystem</h2>
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Government -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-700">Government Partnerships</h3>
+                        <p class="text-sm text-gray-600">Collaborations with OREDA (primary customer & co-investor), GRIDCO (grid integration & tariff), and Odisha Disaster Management Authority (early warning systems).</p>
+                    </div>
+                    <!-- Implementation -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-700">Implementation Partnerships</h3>
+                        <p class="text-sm text-gray-600">Working with Local NGOs (community mobilization), Self-Help Groups (micro-financing & O&M), and Technical Institutions (R&D & training).</p>
+                    </div>
+                    <!-- Financial -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-700">Financial Partnerships</h3>
+                        <p class="text-sm text-gray-600">Aligning with NABARD (rural financing), Climate Investment Funds (carbon credits), and CSR Partners for direct funding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risk Assessment -->
+        <section id="risk" class="section-bg py-20">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Risk Assessment & Mitigation</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Technical Risks -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-red-500">Technical</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600 text-sm">
+                            <li><strong>Risk:</strong> Hardware failure in harsh conditions. <strong>Mitigation:</strong> IP65-rated enclosures, redundant sensors.</li>
+                            <li><strong>Risk:</strong> Communication network failures. <strong>Mitigation:</strong> Multi-path communication (LoRa, 4G), edge computing.</li>
+                            <li><strong>Risk:</strong> AI model inaccuracies. <strong>Mitigation:</strong> Continuous training, human override protocols.</li>
+                        </ul>
+                    </div>
+                    <!-- Financial Risks -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-amber-500">Financial</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600 text-sm">
+                            <li><strong>Risk:</strong> Govt. policy changes. <strong>Mitigation:</strong> Long-term MoUs, diversified revenue streams.</li>
+                            <li><strong>Risk:</strong> Village payment defaults. <strong>Mitigation:</strong> Flexible terms, income-generating activities.</li>
+                            <li><strong>Risk:</strong> Technology obsolescence. <strong>Mitigation:</strong> Modular design, software-focused approach.</li>
+                        </ul>
+                    </div>
+                    <!-- Social/Operational Risks -->
+                    <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                        <h3 class="text-2xl font-bold mb-2 text-green-500">Social & Operational</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600 text-sm">
+                            <li><strong>Risk:</strong> Community resistance. <strong>Mitigation:</strong> Extensive consultation, local champions.</li>
+                            <li><strong>Risk:</strong> Skilled personnel shortage. <strong>Mitigation:</strong> Comprehensive training programs, remote support.</li>
+                            <li><strong>Risk:</strong> Regulatory issues. <strong>Mitigation:</strong> Close government partnerships.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Measurement -->
+        <section id="impact" class="py-20">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Impact Measurement</h2>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Quantitative Metrics -->
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-bold text-blue-700">Quantitative Impact Metrics</h3>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                <p class="text-xl font-semibold mb-2">Energy Access</p>
+                                <p class="text-sm text-gray-600">Target 2,000 villages with >95% uptime. Increase availability from 16 to 23 hours/day.</p>
+                            </div>
+                            <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                <p class="text-xl font-semibold mb-2">Economic Benefits</p>
+                                <p class="text-sm text-gray-600">30% average household savings. Create 8,000+ local jobs at full scale.</p>
+                            </div>
+                            <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                <p class="text-xl font-semibold mb-2">Environmental Impact</p>
+                                <p class="text-sm text-gray-600">Avoid 50,000 tonnes CO₂ annually. Generate 100 MW additional renewable capacity.</p>
+                            </div>
+                            <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                <p class="text-xl font-semibold mb-2">Financials</p>
+                                <p class="text-sm text-gray-600">Generate ₹35cr in carbon credit revenue over 5 years. Reduce diesel consumption by 2M liters annually.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Qualitative Indicators -->
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-bold text-blue-700">Qualitative Impact Indicators</h3>
+                        <div class="space-y-4 text-gray-600">
+                            <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                <p class="text-xl font-semibold mb-2">Social Development</p>
+                                <p class="text-sm">Improved healthcare delivery, enhanced educational outcomes, better women's safety, and stronger community cohesion.</p>
+                            </div>
+                            <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                <p class="text-xl font-semibold mb-2">Disaster Resilience</p>
+                                <p class="text-sm">Zero villages losing critical power during cyclones, faster recovery, and enhanced community self-reliance.</p>
+                            </div>
+                            <div class="card-bg p-6 rounded-xl border border-gray-200 shadow-md">
+                                <p class="text-xl font-semibold mb-2">Technology Adoption</p>
+                                <p class="text-sm">Increased digital literacy among rural populations and skill development for local youth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 text-center text-gray-500 text-sm border-t border-gray-200 mt-12">
+        <p>&copy; 2023 Gram-Urja. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
